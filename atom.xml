@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://Vanisper.github.io</id>
+    <title>Whisper</title>
+    <updated>2022-11-21T18:11:17.158Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://Vanisper.github.io"/>
+    <link rel="self" href="https://Vanisper.github.io/atom.xml"/>
+    <subtitle>温故而知新</subtitle>
+    <logo>https://Vanisper.github.io/images/avatar.png</logo>
+    <icon>https://Vanisper.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2022, Whisper</rights>
+    <entry>
+        <title type="html"><![CDATA[移位运算]]></title>
+        <id>https://Vanisper.github.io/post/yi-wei-yun-suan/</id>
+        <link href="https://Vanisper.github.io/post/yi-wei-yun-suan/">
+        </link>
+        <updated>2022-11-21T17:43:18.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://Vanisper.github.io/post-images/1669052645003.jpg" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="2"><img src="https://Vanisper.github.io/post-images/1669052678549.jpg" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="3"><img src="https://Vanisper.github.io/post-images/1669053394925.jpg" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="4"><img src="https://Vanisper.github.io/post-images/1669053516862.jpg" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="5"><img src="https://Vanisper.github.io/post-images/1669053564396.jpg" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="6"><img src="https://Vanisper.github.io/post-images/1669053590191.jpg" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="7"><img src="https://Vanisper.github.io/post-images/1669053652746.jpg" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="8"><img src="https://Vanisper.github.io/post-images/1669053739527.jpg" alt="" loading="lazy"></figure>
+<h2 id="总结">总结</h2>
+<figure data-type="image" tabindex="9"><img src="https://Vanisper.github.io/post-images/1669053813618.jpg" alt="" loading="lazy"></figure>
+<h2 id="举例">举例</h2>
+<figure data-type="image" tabindex="10"><img src="https://Vanisper.github.io/post-images/1669053909353.jpg" alt="" loading="lazy"></figure>
+<hr>
+<h1 id="逻辑移位">逻辑移位</h1>
+<figure data-type="image" tabindex="11"><img src="https://Vanisper.github.io/post-images/1669053973372.jpg" alt="" loading="lazy"></figure>
+<h2 id="举例-2">举例</h2>
+<figure data-type="image" tabindex="12"><img src="https://Vanisper.github.io/post-images/1669054059200.jpg" alt="" loading="lazy"></figure>
+<hr>
+<h1 id="循环移位">循环移位</h1>
+<figure data-type="image" tabindex="13"><img src="https://Vanisper.github.io/post-images/1669054186993.jpg" alt="" loading="lazy"></figure>
+<h1 id="回顾">回顾</h1>
+<figure data-type="image" tabindex="14"><img src="https://Vanisper.github.io/post-images/1669054268144.jpg" alt="" loading="lazy"></figure>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[原码补码移码的作用]]></title>
+        <id>https://Vanisper.github.io/post/yuan-ma-bu-ma-yi-ma-de-zuo-yong/</id>
+        <link href="https://Vanisper.github.io/post/yuan-ma-bu-ma-yi-ma-de-zuo-yong/">
+        </link>
+        <updated>2022-11-21T16:54:16.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="补码的作用">补码的作用</h1>
+<blockquote>
+<p>让减法操作转变为等价的加法操作，节省硬件成本。</p>
+<p>运用到的数学原理是模运算（mod运算，即一个数除以另一个数的余数）的等价性：<br>
+一个数对k取模结果为a，如果还有另一个数对k取模结果也为a，那么这些数被认为是同一类，并且这类数有一个规律，那就是相加之后一定是k的整数倍，如果这个倍数为1的话，称这两个数互为补数<br>
+所以，要比较快速的找到一个数的补码，就可以直接用k减去这个数的绝对值。</p>
+<p>在一个八位二进制计算体系中，“八位”天然的形成了一个<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mn>2</mn><mn>8</mn></msup></mrow><annotation encoding="application/x-tex">2^8</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">8</span></span></span></span></span></span></span></span></span></span></span>的模运算，也就有了<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mn>2</mn><mn>8</mn></msup><mo>−</mo><mi mathvariant="normal">这</mi><mi mathvariant="normal">个</mi><mi mathvariant="normal">数</mi><mo>=</mo><mi mathvariant="normal">这</mi><mi mathvariant="normal">个</mi><mi mathvariant="normal">数</mi><mi mathvariant="normal">的</mi><mi mathvariant="normal">补</mi><mi mathvariant="normal">数</mi></mrow><annotation encoding="application/x-tex">2^8-这个数=这个数的补数</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.897438em;vertical-align:-0.08333em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">8</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mord cjk_fallback">这</span><span class="mord cjk_fallback">个</span><span class="mord cjk_fallback">数</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mord cjk_fallback">这</span><span class="mord cjk_fallback">个</span><span class="mord cjk_fallback">数</span><span class="mord cjk_fallback">的</span><span class="mord cjk_fallback">补</span><span class="mord cjk_fallback">数</span></span></span></span>，而这个补数就是这个二进制原码的补码，即符号位为1时，符号位不变，其余位取反加一，符号位为0(表示这是一个正数)则不变。</p>
+</blockquote>
+<p>加法器的硬件实现比较容易，但是减法器的构建成本比较大，所以考虑使用加法代替减法</p>
+<p>两个二进制数（原码）相加，首先判断首位（符号位）是否为1，是的话说明是负数，对其取补码，两个二进制数都如此处理，之后对得到的两个补码做加法运算，得到的结果就是原码相加的结果<br>
+<img src="https://Vanisper.github.io/post-images/1669051821335.jpg" alt="" loading="lazy"></p>
+<figure data-type="image" tabindex="1"><img src="https://Vanisper.github.io/post-images/1669052243787.jpg" alt="" loading="lazy"></figure>
+<h1 id="移码的作用">移码的作用</h1>
+<p>计算机通过从前到后依次判断移码每一位的数的大小，直接就可以判断出真值的大小。<br>
+只有整数有移码<br>
+<img src="https://Vanisper.github.io/post-images/1669052448237.jpg" alt="" loading="lazy"></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[加法器、ALU的改进(加强版)]]></title>
+        <id>https://Vanisper.github.io/post/jia-fa-qi-alu-de-gai-jin-jia-qiang-ban/</id>
+        <link href="https://Vanisper.github.io/post/jia-fa-qi-alu-de-gai-jin-jia-qiang-ban/">
+        </link>
+        <updated>2022-11-21T15:49:32.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="并行加法器的优化">并行加法器的优化</h1>
+<h2 id="4位cla加法器">4位CLA加法器</h2>
+<blockquote>
+<p>观察原有的加法器的计算式，当前项的进位是与前一位的进位是相关的，将这种迭代关系分解开，实际上就是与初始输入的进位<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>C</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">C_0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>相关的。</p>
+<p>将硬件设计成一次输入4个二进制数，就形成了4位CLA加法器，这个小模块可以实现，输入4个二进制数，加法器内部可以并行计算出结果，最后向前传递进位。</p>
+</blockquote>
+<figure data-type="image" tabindex="1"><img src="https://Vanisper.github.io/post-images/1669047448085.jpg" alt="" loading="lazy"></figure>
+<h1 id="组内并行-组件并行进位方式">组内并行、组件并行进位方式</h1>
+<blockquote>
+<p>为了再次提高运算效率，将以上得到的4位CLA加法器，串联起来，就形成了<strong>单级先行进位方式</strong>，又称为<code>组内并行、组间串行</code>进位方式，因为各个4位CLA加法器之间还是通过前一位的进位值驱动的。</p>
+<p>于是为了更进一步加快效率，又对组间的进位值分析，将组件进位值的递归<strong>解开</strong>，发现组间的进位值其实可以直接通过上一组4位CLA加法器内部直接计算出来，于是形成了<strong>多级先行进位方式</strong>，又称为<code>组内并行</code>、<code>组间并行</code>进位方式。</p>
+</blockquote>
+<figure data-type="image" tabindex="2"><img src="https://Vanisper.github.io/post-images/1669048224722.jpg" alt="" loading="lazy"></figure>
+<h1 id="alu芯片的优化">ALU芯片的优化</h1>
+<figure data-type="image" tabindex="3"><img src="https://Vanisper.github.io/post-images/1669049284875.jpg" alt="" loading="lazy"></figure>
+<h1 id="小结">小结</h1>
+<figure data-type="image" tabindex="4"><img src="https://Vanisper.github.io/post-images/1669049436079.jpg" alt="" loading="lazy"></figure>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[基本运算电路、加法器设计]]></title>
+        <id>https://Vanisper.github.io/post/ji-ben-yun-suan-dian-lu-jia-fa-qi-she-ji/</id>
+        <link href="https://Vanisper.github.io/post/ji-ben-yun-suan-dian-lu-jia-fa-qi-she-ji/">
+        </link>
+        <updated>2022-11-21T15:18:55.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>与</li>
+<li>或</li>
+<li>非</li>
+<li>复合运算
+<ul>
+<li>与非</li>
+<li>或非</li>
+<li>异或(A非·B+A·B非)</li>
+<li>同或(与异或相反)</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>与非、或非的反演率(德摩根律)</p>
+</blockquote>
+<h1 id="异或的运用">异或的运用 =&gt;</h1>
+<h2 id="奇偶校验码">奇偶校验码：</h2>
+<p>对一串二进制数的每一位前后依次进行异或运算，得到的结果是0或1，0表示这个二进制数有偶数个<code>1</code>，1表示这个二进制数有奇数个<code>1</code>。</p>
+<h2 id="一位全加器">一位全加器</h2>
+<figure data-type="image" tabindex="1"><img src="https://Vanisper.github.io/post-images/1669045022349.jpg" alt="" loading="lazy"></figure>
+<h2 id="串行加法器">串行加法器</h2>
+<blockquote>
+<p>效率是比较低的<br>
+<img src="https://Vanisper.github.io/post-images/1669045168545.jpg" alt="" loading="lazy"></p>
+</blockquote>
+<h2 id="并行加法器串行进位的并行加法器">并行加法器（串行进位的并行加法器）</h2>
+<blockquote>
+<p>这种加法器实际上还是使用的是串行的进位方式：只有低位的进位传入后，才可以进行更高一位的计算<br>
+所以这种加法器的运算速度取决于上一位的“进位”的产生速度<br>
+<img src="https://Vanisper.github.io/post-images/1669045424351.jpg" alt="" loading="lazy"></p>
+</blockquote>
+<h1 id="本节总览">本节总览</h1>
+<figure data-type="image" tabindex="2"><img src="https://Vanisper.github.io/post-images/1669045676768.jpg" alt="" loading="lazy"></figure>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[数据的表示与运算]]></title>
+        <id>https://Vanisper.github.io/post/shu-ju-de-biao-shi-yu-yun-suan/</id>
+        <link href="https://Vanisper.github.io/post/shu-ju-de-biao-shi-yu-yun-suan/">
+        </link>
+        <updated>2022-11-21T13:19:01.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="几种码标识定点整数">几种码标识定点整数</h1>
+<blockquote>
+<p>移码只能表示定点整数</p>
+</blockquote>
+<figure data-type="image" tabindex="1"><img src="https://Vanisper.github.io/post-images/1669037102615.jpg" alt="" loading="lazy"></figure>
+<h1 id="小结">小结</h1>
+<figure data-type="image" tabindex="2"><img src="https://Vanisper.github.io/post-images/1669039897837.jpg" alt="" loading="lazy"></figure>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hello Gridea]]></title>
+        <id>https://Vanisper.github.io/post/hello-gridea/</id>
+        <link href="https://Vanisper.github.io/post/hello-gridea/">
+        </link>
+        <updated>2018-12-11T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+<!-- more -->
+<p><a href="https://github.com/getgridea/gridea">Github</a><br>
+<a href="https://gridea.dev/">Gridea 主页</a><br>
+<a href="https://fehey.com/">示例网站</a></p>
+<h2 id="特性">特性👇</h2>
+<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
+<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
+<p>🏷️  你可以对文章进行标签分组</p>
+<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
+<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
+<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
+<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
+<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
+<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
+<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
+<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
+<p>未来，它一定会成为你离不开的伙伴</p>
+<p>尽情发挥你的才华吧！</p>
+<p>😘 Enjoy~</p>
+]]></content>
+    </entry>
+</feed>
